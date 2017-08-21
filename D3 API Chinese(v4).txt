@@ -128,22 +128,23 @@ Bin discrete samples into continuous, non-overlapping intervals.
 * d3.thresholdScott - Scott规则
 * d3.thresholdSturges – Sturges规则
 这个链接是一个不定义规则的直方图实例和一个定义了规则的直方图实例，http://blog.csdn.net/u014711869/article/details/77371550使用了上述部分函数。
-Axes (d3-axis)
+坐标轴 Axes (d3-axis)
 Human-readable reference marks for scales.
-* d3.axisTop - create a new top-oriented axis generator.
-* d3.axisRight - create a new right-oriented axis generator.
-* d3.axisBottom - create a new bottom-oriented axis generator.
-* d3.axisLeft - create a new left-oriented axis generator.
-* axis - generate an axis for the given selection.
-* axis.scale - set the scale.
-* axis.ticks - customize how ticks are generated and formatted.
-* axis.tickArguments - customize how ticks are generated and formatted.
-* axis.tickValues - set the tick values explicitly.
-* axis.tickFormat - set the tick format explicitly.
-* axis.tickSize - set the size of the ticks.
-* axis.tickSizeInner - set the size of inner ticks.
-* axis.tickSizeOuter - set the size of outer (extent) ticks.
-* axis.tickPadding - set the padding between ticks and labels.
+* d3.axisTop – 创建一个坐标轴生成器（top）
+* d3.axisRight - 创建一个坐标轴生成器（Right）
+* d3.axisBottom - 创建一个坐标轴生成器（Bottom）
+* d3.axisLeft - 创建一个坐标轴生成器（Left）
+* axis – 生成坐标轴
+* axis.scale – 为坐标轴设置比例尺
+* axis.ticks – 定义坐标轴刻度生成方式（默认值为）
+* axis.tickArguments – 定义坐标轴刻度参数
+* axis.tickValues – 设置有特殊需求的刻度值（默认值为null）
+* axis.tickFormat – 设置有特殊需求的刻度格式（默认值为null）
+* axis.tickSize – 设置刻度的大小
+* axis.tickSizeInner – 设置除两端外所有刻度的长度（默认值为6）
+* axis.tickSizeOuter - 设置两端刻度的长度（默认值为6）
+* axis.tickPadding – 设置刻度与文字之间距离（默认值为3）
+部分细节请参看http://blog.csdn.net/u014711869/article/details/77447466
 Brushes (d3-brush)
 Select a one- or two-dimensional region using the mouse or touch.
 * d3.brush - create a new two-dimensional brush.
